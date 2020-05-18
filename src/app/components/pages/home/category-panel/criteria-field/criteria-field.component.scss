@@ -1,0 +1,11 @@
+#main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+}
+
+.criteria-description, .criteria-checkbox {
+    font-family: pangolin-regular;
+}

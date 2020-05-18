@@ -1,12 +1,10 @@
-<h2>{{powerLevel}}</h2>
 <div id="main-container">
     <div id="title-container" [style.background-color]="category.color">
         <h2 id="title">{{category.name}}</h2>
+        <div id="sum">{{sum}}</div>
     </div>
     <div id="criterias-container">
-        <div class="criteria" *ngFor="let criteria of category.criterias">
-            <div class="criteria-description">{{criteria.description}}</div>
-            <mat-checkbox class="criteria-checkbox" (change) = "onCheck(criteria, $event)">+{{criteria.points}}</mat-checkbox>
-        </div>
+        <app-criteria-field-component #criteriafield *ngFor="let criteria of category.criterias" [criteria]="criteria">
+        </app-criteria-field-component>
     </div>
 </div>

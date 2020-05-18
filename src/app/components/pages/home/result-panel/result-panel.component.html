@@ -1,6 +1,11 @@
 <div id="main-container">
     <div id="title-container">
         <h2 id="title">Results</h2>
-        <div (messageEvent) = "receiveMessage($event)">{{totalPowerLevel}}</div>
+        <div id="sum">{{sum}}</div>
+    </div>
+    <div id="level-container">
+        <div id="level-title">{{level.title}}</div>
+        <img id="level-picture" [src]="picture">
+        <div id="level-description">{{level.description}}</div>
     </div>
 </div>
