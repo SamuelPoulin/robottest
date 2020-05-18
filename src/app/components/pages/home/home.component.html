@@ -4,6 +4,6 @@
     <div id="categories-container">
         <app-category-panel-component *ngFor="let category of categories" [category]="category">
         </app-category-panel-component>
-        <app-result-panel-component></app-result-panel-component>
+        <app-result-panel-component [sum]="sum"></app-result-panel-component>
     </div>
 </div>

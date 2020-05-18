@@ -1,6 +1,7 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit, ViewChildren, QueryList } from '@angular/core';
 import { Category } from 'src/app/models/category';
 import { AbstractPanelComponent } from '../abstract-panel/abstract-panel.component';
+import { CriteriaFieldComponent } from './criteria-field/criteria-field.component';
 
 @Component({
     selector: 'app-category-panel-component',
@@ -9,25 +10,20 @@ import { AbstractPanelComponent } from '../abstract-panel/abstract-panel.compone
 })
 export class CategoryPanelComponent extends AbstractPanelComponent {
     @Input() category: Category;
-    @Output() messageEvent = new EventEmitter<number>();
 
-    powerLevel = 0;
+    @ViewChildren(CriteriaFieldComponent) criteriaFields: QueryList<CriteriaFieldComponent>;
 
-    sendPowerLevel() {
-        this.messageEvent.emit(this.powerLevel);
-    }
+    get sum(): number {
+        let sum = 0;
 
-    onCheck(value: any, event: any): void {
-        let isChecked: boolean;
-        if (event.checked) {
-            isChecked = true;
+        if (this.criteriaFields) {
+            this.criteriaFields.forEach((criteriaField) => {
+                if (criteriaField.checked) {
+                    sum += criteriaField.criteria.points;
+                }
+            });
         }
-        isChecked = !isChecked;
-        if (isChecked) {
-            this.powerLevel -= value.points;
-        } else {
-            this.powerLevel += value.points;
-        }
-        this.sendPowerLevel();
+
+        return sum;
     }
 }
