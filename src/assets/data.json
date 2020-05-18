@@ -354,5 +354,70 @@
                 }
             ]
         }
+    ],
+    "levels": [
+        {
+            "title": "Grand Wizard",
+            "description": "No longer a human, you are barely attached to the living world by a thin thread. The curse of autism eternal and spaghetti all-powerful has consumed your life and soul as you straddle the line between this world and the next.",
+            "minPoints": 0,
+            "maxPoints": 8,
+            "picture": "levels/grandwizard.jpg"
+        },
+        {
+            "title": "Wizard",
+            "description": "You have given up conventional human desired and needs in favour of magical powers, only obtainable by some of the most concentrated, powerful autism physically possible.",
+            "minPoints": 9,
+            "maxPoints": 24,
+            "picture": "levels/wizard.jpg"
+        },
+        {
+            "title": "Wizard Apprentice",
+            "description": "Although hope for you is bleak, it is not impossible. You have a great potential for magical powers but time may yet heal your soul into that of a mortal.",
+            "minPoints": 25,
+            "maxPoints": 34,
+            "picture": "levels/wizardapprentice.jpg"
+        },
+        {
+            "title": "Robot",
+            "description": "Your flesh has turned to metal from feels. A little magic flows through your enlightened veins, and you are a likely suspect for a mass shooting in the beta uprising. However, this would require going outside.",
+            "minPoints": 35,
+            "maxPoints": 58,
+            "picture": "levels/robot.jpg"
+        },
+        {
+            "title": "Cyborg",
+            "description": "You are a sorry amalgam of robot and regular human. You linger in two worlds at once, an outsider to both hte normies and the robots. As a result, you may be on your own with your feels.",
+            "minPoints": 59,
+            "maxPoints": 81,
+            "picture": "levels/cyborg.jpg"
+        },
+        {
+            "title": "Slightly Strange",
+            "description": "You have several qualities of a robot but participate largely in the normalfag world. You probably even hang out with normals, although they can sense you are not one of them so you struggle socially.",
+            "minPoints": 82,
+            "maxPoints": 94,
+            "picture": "levels/slightlystrange.jpg"
+        },
+        {
+            "title": "Normalfag",
+            "description": "You don't necessarily have the best genes or looks, but you find socialising easy and probably have had plenty of relationships before. You have a very typical personnality and set of interests, and need to get off this site.",
+            "minPoints": 95,
+            "maxPoints": 115,
+            "picture": "levels/normalfag.jpg"
+        },
+        {
+            "title": "Chad/Stacey",
+            "description": "You are a step above the average normie. Blessed with some fine genetics, you don't need to work very hard to get what you want. Finding a bf/gf is like child's play to you and even the normies get a little jealous.",
+            "minPoints": 116,
+            "maxPoints": 129,
+            "picture": "levels/chadstacey.jpg"
+        },
+        {
+            "title": "Successful",
+            "description": "Your looks, intelligence and charisma have helped you overcome struggles, leading you to a wealthy and comfortable point in your life. All thanks to a mix of luck and talent, you are a shining example of a human.",
+            "minPoints": 130,
+            "maxPoints": 172,
+            "picture": "levels/successful.jpg"
+        }
     ]
 }

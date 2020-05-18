@@ -1,0 +1,18 @@
+#main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    height: 75px
+}
+
+button {
+    color: white;
+    background-color: #101316;
+    transition: transform 0.5s;
+
+    &:hover {
+        transform: translate(0px,-5px,);
+    }
+}

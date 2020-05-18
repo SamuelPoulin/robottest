@@ -1,5 +1,6 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { AbstractPanelComponent } from '../abstract-panel/abstract-panel.component';
+import { Level } from 'src/app/models/level';
 
 @Component({
     selector: 'app-result-panel-component',
@@ -8,4 +9,13 @@ import { AbstractPanelComponent } from '../abstract-panel/abstract-panel.compone
 })
 export class ResultPanelComponent extends AbstractPanelComponent {
     @Input() sum: number;
+    @Input() levels: Level[];
+
+    get level(): Level {
+        return this.levels.find(level => level.minPoints <= this.sum && level.maxPoints >= this.sum);
+    }
+
+    get picture(): string {
+        return 'assets/' + this.level.picture;
+    }
 }

@@ -8,12 +8,14 @@ import { CriteriaFieldComponent } from './category-panel/criteria-field/criteria
 import { ResultPanelComponent } from './result-panel/result-panel.component';
 import { TrackerComponent } from './tracker/tracker.component';
 import { FormsModule } from '@angular/forms';
+import { SharedModule } from '../../shared/shared.module';
 
 @NgModule({
     imports: [
         CommonModule,
         MatCheckboxModule,
-        FormsModule
+        FormsModule,
+        SharedModule
     ],
     declarations: [
         HomeComponent,
