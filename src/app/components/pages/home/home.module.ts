@@ -5,6 +5,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { HomeComponent } from './home.component';
 import { CategoryPanelComponent } from './category-panel/category-panel.component';
 import { ResultPanelComponent } from './result-panel/result-panel.component';
+import { TrackerComponent } from './tracker/tracker.component';
 
 @NgModule({
     imports: [
@@ -14,7 +15,8 @@ import { ResultPanelComponent } from './result-panel/result-panel.component';
     declarations: [
         HomeComponent,
         CategoryPanelComponent,
-        ResultPanelComponent
+        ResultPanelComponent,
+        TrackerComponent
     ],
 })
 export class HomeModule { }
