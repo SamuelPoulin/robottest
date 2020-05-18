@@ -1,0 +1,21 @@
+#main-container {
+    border-radius: 25px;
+    width: 500px;
+    min-height: 500px;
+    background-color: #101316;
+}
+
+#title {
+    font-family: pangolin-regular;
+    text-align: center;
+    margin: 0px;
+}
+
+#title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60px;
+    border-radius: 25px 25px 0px 0px;
+    background-color: #3d5afe;
+}

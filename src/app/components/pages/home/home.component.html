@@ -1,1 +1,8 @@
-<div>Home</div>
+<div id="main-container">
+    <h1 id="title">The Robot Test</h1>
+    <div id="categories-container">
+        <app-category-panel-component *ngFor="let category of categories" [category]="category">
+        </app-category-panel-component>
+        <app-result-panel-component></app-result-panel-component>
+    </div>
+</div>

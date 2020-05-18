@@ -1,0 +1,11 @@
+<div id="main-container">
+    <div id="title-container" [style.background-color]="category.color">
+        <h2 id="title">{{category.name}}</h2>
+    </div>
+    <div id="criterias-container">
+        <div class="criteria" *ngFor="let criteria of category.criterias">
+            <div class="criteria-description">{{criteria.description}}</div>
+            <mat-checkbox class="criteria-checkbox">+{{criteria.points}}</mat-checkbox>
+        </div>
+    </div>
+</div>
