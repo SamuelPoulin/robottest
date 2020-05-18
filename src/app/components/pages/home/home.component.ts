@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Category } from 'src/app/models/category';
+import * as data from 'src/assets/data.json';
 
 @Component({
     selector: 'app-home',
@@ -7,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+    categories: Category[];
+
+    constructor() {
+        this.categories = data.categories;
+    }
 }

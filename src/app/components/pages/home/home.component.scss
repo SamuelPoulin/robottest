@@ -1,0 +1,22 @@
+#title {
+    font-family: pangolin-regular;
+    text-align: center;
+    font-size: 50px;
+}
+
+#categories-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+app-category-panel-component, app-result-panel-component {
+    margin: 25px;
+    transition: transform 0.5s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
