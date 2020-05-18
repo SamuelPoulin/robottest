@@ -1,0 +1,53 @@
+* {
+    font-family: pangolin-regular;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    width: 500px;
+    min-height: 500px;
+    background-color: #101316;
+}
+
+#title {
+    text-align: center;
+    margin: 0px;
+}
+
+#sum {
+    font-size: 24px;
+    position: absolute;
+    right: 35px;
+}
+
+#title-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    height: 60px;
+    border-radius: 25px 25px 0px 0px;
+    background-color: #3d5afe;
+}
+
+#level-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    padding: 25px;
+}
+
+#level-title {
+    font-size: 24px;
+}
+
+#level-picture {
+    border-radius: 25px;
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+}
