@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Criteria } from 'src/app/models/criteria';
+import { HomeComponent } from 'src/app/components/pages/home/home.component';
 
 @Component({
   selector: 'app-tracker',
@@ -8,9 +8,6 @@ import { Criteria } from 'src/app/models/criteria';
 })
 export class TrackerComponent implements OnInit {
 
-  powerLevel: Criteria;
-
   ngOnInit(): void {
-      //this.powerLevel.points = 100;
-    }
+  }
 }
