@@ -17,20 +17,21 @@
 app-category-panel-component, app-result-panel-component {
     margin-top: 50px;
     transition: transform 0.5s;
-
+    width: 500px;
+    min-height: 500px;
     &:hover {
         transform: scale(1.05);
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 525px) {
     #categories-container {
       justify-content: center;
     }
 
     app-category-panel-component, app-result-panel-component {
         margin-top: 50px;
-        width: 80%;
+        width: 95%;
         &:hover {
             transform: none;
         }
