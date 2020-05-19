@@ -1,4 +1,6 @@
 #main-container {
+    display: flex;
+    flex-direction: column;
     border-radius: 25px;
     width: 500px;
     min-height: 500px;
@@ -29,4 +31,10 @@
 
 #criterias-container {
     padding: 20px 25px 20px 25px;
+}
+
+@media only screen and (max-width: 600px) {
+    #main-container {
+        width: 100%;
+    }
 }
